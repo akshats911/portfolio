@@ -19,7 +19,7 @@
 
 header{
     background-color: var(--bgDark);
-    /* height: 800px; */
+
     clip-path: polygon(0 0, 100% 0, 100% 100%, 73% 94%, 0 100%);
 }
 
@@ -43,15 +43,16 @@ header nav .logo{
     margin-right: 3rem;
 }
 
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
 .container{
     max-width: 1152px;
     padding: 0 15px;
     margin: 0 auto;
 }
 
-body{
-    font-family: 'Poppins', sans-serif;
-}
 .hero{
     padding-top: 2rem;
     padding-bottom: 3rem;
@@ -123,7 +124,7 @@ section.about .socials a{
     align-items: center;
     justify-content: center;
     width: 35px;
-    /* padding-top: 1rem; */
+
     margin-right: 0.8rem;
     border-radius: 50%;
 
@@ -135,7 +136,7 @@ section.about .socials a:hover{
 }
 
 section.services{
-    background: var(--bgLight);
+    background: rgb(17, 17, 17)
 }
 .services-head{
     color: rgb(10, 9, 9);
@@ -148,16 +149,18 @@ section.services{
 }
 
 .services-head + p{
-    color: var(--secondary);
+    color: var(--white);
     font-family: 'Lato', sans-serif;
     margin-bottom: 1rem;
     text-align: center;
     margin-bottom: 6rem;
+    font-weight: 400;
 
 }
 
 .card img{
     width: 50px;
+    background:white;
 }
 
 section.services .card-grid{
@@ -169,18 +172,21 @@ section.services .card-grid{
 
 section.services .card-grid .card{
     background: var(--white);
+
     padding: 3rem 2rem;
     position: relative;
     text-align: center;
     transition: all .2s ease;
+    
 }
 
 section.services .card-grid .card img{
     position: absolute;
     top: -1.5rem;
-    /* left: 9.5rem; */
+
     left: 50%;
     transform: translateX(-50%);
+    color: var();
 }
 
 section.services .card-grid .card h2{
@@ -191,13 +197,13 @@ section.services .card-grid .card h2{
 
 section.services .card-grid .card p{
     font-family: 'Lato', sans-serif;
-    color: var(--secondary);
+    color: var(--seconday);
     line-height: 1.6;
 
 }
 
 section.services .card-grid .card:hover{
-    background: var(--bgDark);
+    background: var(--primary);
 }
 section.services .card-grid .card:hover h2{
     color: var(--white);
